@@ -1,5 +1,5 @@
 import React from "react";
-
+import Navbar from "../components/Navbar";
 
 
 const Dashboard = () => {
@@ -7,7 +7,7 @@ const Dashboard = () => {
 
     return(
         <div className="">
-            hello, world
+            <Navbar />
         </div>
     );
 };
