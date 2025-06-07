@@ -16,8 +16,8 @@ const Metrics = () => {
                 </div>
                 <div className="">
                     {/* text container */}
-                    <h1 className="capitalize text-[1.15rem] font-semibold">total students</h1>
-                    <p className="text-[1.15rem]">2500</p>
+                    <h1 className="capitalize text-[1.15rem] font-semibold text-[#023047]">total students</h1>
+                    <p className="text-[1.15rem] text-[#023047]">2500</p>
                 </div>
             </div>
 
@@ -31,8 +31,8 @@ const Metrics = () => {
                 </div>
                 <div className="">
                     {/* text container */}
-                    <h1 className="capitalize text-[1.15rem] font-semibold">total teachers</h1>
-                    <p className="text-[1.15rem]">150</p>
+                    <h1 className="capitalize text-[1.15rem] font-semibold text-[#023047]">total teachers</h1>
+                    <p className="text-[1.15rem] text-[#023047]">150</p>
                 </div>
             </div>
 
@@ -46,8 +46,8 @@ const Metrics = () => {
                 </div>
                 <div className="">
                     {/* text container */}
-                    <h1 className="capitalize text-[1.15rem] font-semibold">total working staffs</h1>
-                    <p className="text-[1.15rem]">600</p>
+                    <h1 className="capitalize text-[1.15rem] font-semibold text-[#023047]">total working staffs</h1>
+                    <p className="text-[1.15rem] text-[#023047]">600</p>
                 </div>
             </div>
 
