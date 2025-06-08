@@ -40,7 +40,7 @@ const Charts = ({male, female}) => {
 
     return(
         <div className="grid grid-cols-2 gap-[1rem] px-[2rem] py-[1rem]">
-            <div className="col-span-1 bg-white py-[1rem] rounded-lg">
+            <div className="col-span-2 lg:col-span-1 bg-white py-[1rem] rounded-lg">
                 {/* doughnut chart */}
                 <div className="">
                     <h1 className="capitalize text-center text-[1.5rem] font-semibold">total students by gender</h1>
@@ -66,7 +66,7 @@ const Charts = ({male, female}) => {
                     </ul>
                 </div>
             </div>
-            <div className="col-span-1 bg-white py-[1rem] rounded-lg">
+            <div className="col-span-2 lg:col-span-1 bg-white py-[1rem] rounded-lg">
                 {/* notice board */}
                 <div className="">
                     <h1 className="capitalize text-center text-[1.5rem] font-semibold">total students by gender</h1>
