@@ -2,7 +2,7 @@ import React from "react";
 
 
 
-const Metrics = () => {
+const Metrics = ({ students, teachers, staffs }) => {
     return(
         <div className="grid grid-cols-3 gap-[2rem] px-[2rem] py-[1rem]">
             <div className="col-span-3 lg:col-span-1 gap-[1rem] flex items-center bg-[#8ecae6] px-[2rem] py-[1rem] rounded-lg">
@@ -17,7 +17,7 @@ const Metrics = () => {
                 <div className="">
                     {/* text container */}
                     <h1 className="capitalize text-[1.15rem] font-semibold text-[#023047]">total students</h1>
-                    <p className="text-[1.15rem] text-[#023047]">2500</p>
+                    <p className="text-[1.15rem] text-[#023047]">{students}</p>
                 </div>
             </div>
 
@@ -32,7 +32,7 @@ const Metrics = () => {
                 <div className="">
                     {/* text container */}
                     <h1 className="capitalize text-[1.15rem] font-semibold text-[#023047]">total teachers</h1>
-                    <p className="text-[1.15rem] text-[#023047]">150</p>
+                    <p className="text-[1.15rem] text-[#023047]">{teachers}</p>
                 </div>
             </div>
 
@@ -47,7 +47,7 @@ const Metrics = () => {
                 <div className="">
                     {/* text container */}
                     <h1 className="capitalize text-[1.15rem] font-semibold text-[#023047]">total working staffs</h1>
-                    <p className="text-[1.15rem] text-[#023047]">600</p>
+                    <p className="text-[1.15rem] text-[#023047]">{staffs}</p>
                 </div>
             </div>
 

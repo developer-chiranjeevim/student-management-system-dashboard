@@ -5,21 +5,6 @@ import Notice from "./Notice";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
-const presentDays = 22;
-const absentDays = 3;
-
-const data = {
-    labels: ['Present', 'Absent'],
-    datasets: [
-      {
-        label: 'Attendance',
-        data: [presentDays, absentDays],
-        backgroundColor: ['#219ebc', '#023047'],
-        borderColor: ['#ffffff', '#ffffff'],
-        borderWidth: 2,
-      },
-    ],
-};
 
 const options = {
     responsive: true,
@@ -36,7 +21,21 @@ const options = {
     },
   };
   
-const Charts = () => {
+const Charts = ({male, female}) => {
+    
+
+    const data = {
+        labels: ['Male', 'Female'],
+        datasets: [
+        {
+            label: 'Attendance',
+            data: [male, female],
+            backgroundColor: ['#219ebc', '#023047'],
+            borderColor: ['#ffffff', '#ffffff'],
+            borderWidth: 2,
+        },
+        ],
+    };
 
 
     return(
@@ -50,7 +49,7 @@ const Charts = () => {
                     <Doughnut data={data} options={options} />
                     <div className="absolute top-0 w-full h-full flex flex-col items-center justify-center">
                         <h1 className="text-black text-[1.5rem] font-semibold capitalize">total students</h1>
-                        <h1 className="text-black text-[2.5rem] font-semibold">2500</h1>
+                        <h1 className="text-black text-[2.5rem] font-semibold">{male + female}</h1>
                     </div>
                 </div>
                 <div className="w-full flex justify-center my-[1rem]">
